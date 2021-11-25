@@ -127,7 +127,7 @@ namespace APICartaoDeCredito.Controllers
                 int ccn1 = rnd.Next(1000, 9999); //Alocando os numeros aleatórios gerados da classe Random em variaveis
                 int ccn2 = rnd.Next(1000, 9999);
                 int ccn3 = rnd.Next(1000, 9999);
-                int ccn4 = rnd.Next(1000, 9999);
+                int ccn4 = rnd.Next(1000, 9998);
                 card = $"{ccn1} {ccn2} {ccn3} {ccn4}";
             } while (card.Equals(list)); //Fazendo validação de que o cartão de crédito não existe no BD.
             clienteDados.CardNumber = card;

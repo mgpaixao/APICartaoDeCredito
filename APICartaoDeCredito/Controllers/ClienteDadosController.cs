@@ -25,6 +25,15 @@ namespace APICartaoDeCredito.Controllers
             _context = context;
         }
 
+        [HttpPost]
+        [Route("lead")]
+        public async Task<ActionResult<LeadRequest>> LeadUpdate(LeadRequest leadRequest)
+        {
+            
+
+            return Ok(leadRequest);
+        }
+
         // GET: api/ClienteDados
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ClienteDados>>> GetClientesDb()

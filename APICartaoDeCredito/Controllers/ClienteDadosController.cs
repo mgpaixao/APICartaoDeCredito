@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
 //importar bibliotecas necessárias para o projeto 
 using Microsoft.AspNetCore.Http;
@@ -25,14 +26,6 @@ namespace APICartaoDeCredito.Controllers
             _context = context;
         }
 
-        [HttpPost]
-        [Route("lead")]
-        public async Task<ActionResult<LeadRequest>> LeadUpdate(LeadRequest leadRequest)
-        {
-            
-
-            return Ok(leadRequest);
-        }
 
         // GET: api/ClienteDados
         [HttpGet]

@@ -16,7 +16,7 @@ The API basically generates a random fake credit card number which is associated
 
 # DataBase Set-Up
 Startup.cs  
-Criating a in memory database named "ClienteDb"
+Creating a in memory database named "ClienteDb"
 
 ``` services.AddDbContext<ApiContex>(opt => opt.UseInMemoryDatabase("ClientesDb")); ```
 
